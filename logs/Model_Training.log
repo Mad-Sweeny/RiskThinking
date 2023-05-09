@@ -1,0 +1,164 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/home/ebony_maw_0/.local/lib/python3.9/site-packages/pyspark/jars/spark-unsafe_2.12-3.2.4.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+23/05/04 11:07:15 INFO SparkContext: Running Spark version 3.2.4
+23/05/04 11:07:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/05/04 11:07:15 INFO ResourceUtils: ==============================================================
+23/05/04 11:07:15 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/05/04 11:07:15 INFO ResourceUtils: ==============================================================
+23/05/04 11:07:15 INFO SparkContext: Submitted application: Model Training
+23/05/04 11:07:15 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/05/04 11:07:15 INFO ResourceProfile: Limiting resource is cpu
+23/05/04 11:07:15 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/05/04 11:07:15 INFO SecurityManager: Changing view acls to: ebony_maw_0
+23/05/04 11:07:15 INFO SecurityManager: Changing modify acls to: ebony_maw_0
+23/05/04 11:07:15 INFO SecurityManager: Changing view acls groups to: 
+23/05/04 11:07:15 INFO SecurityManager: Changing modify acls groups to: 
+23/05/04 11:07:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ebony_maw_0); groups with view permissions: Set(); users  with modify permissions: Set(ebony_maw_0); groups with modify permissions: Set()
+23/05/04 11:07:15 INFO Utils: Successfully started service 'sparkDriver' on port 43853.
+23/05/04 11:07:15 INFO SparkEnv: Registering MapOutputTracker
+23/05/04 11:07:15 INFO SparkEnv: Registering BlockManagerMaster
+23/05/04 11:07:15 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/05/04 11:07:15 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/05/04 11:07:15 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/05/04 11:07:15 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-bf32b203-8a96-46be-b2cb-84796899b88c
+23/05/04 11:07:15 INFO MemoryStore: MemoryStore started with capacity 25.0 GiB
+23/05/04 11:07:15 INFO SparkEnv: Registering OutputCommitCoordinator
+23/05/04 11:07:16 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/05/04 11:07:16 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:4040
+23/05/04 11:07:16 INFO Executor: Starting executor ID driver on host sample-challenge.asia-south1-b.c.rt-de-sample-task.internal
+23/05/04 11:07:16 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40195.
+23/05/04 11:07:16 INFO NettyBlockTransferService: Server created on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195
+23/05/04 11:07:16 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/05/04 11:07:16 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, 40195, None)
+23/05/04 11:07:16 INFO BlockManagerMasterEndpoint: Registering block manager sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 with 25.0 GiB RAM, BlockManagerId(driver, sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, 40195, None)
+23/05/04 11:07:16 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, 40195, None)
+23/05/04 11:07:16 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, 40195, None)
+23/05/04 11:07:17 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/05/04 11:07:17 INFO SharedState: Warehouse path is 'file:/home/ebony_maw_0/code/spark-warehouse'.
+23/05/04 11:07:18 INFO InMemoryFileIndex: It took 60 ms to list leaf files for 1 paths.
+23/05/04 11:07:18 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+23/05/04 11:07:18 INFO DAGScheduler: Got job 0 (parquet at NativeMethodAccessorImpl.java:0) with 1 output partitions
+23/05/04 11:07:18 INFO DAGScheduler: Final stage: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0)
+23/05/04 11:07:18 INFO DAGScheduler: Parents of final stage: List()
+23/05/04 11:07:18 INFO DAGScheduler: Missing parents: List()
+23/05/04 11:07:18 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/05/04 11:07:18 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 100.3 KiB, free 25.0 GiB)
+23/05/04 11:07:18 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 35.8 KiB, free 25.0 GiB)
+23/05/04 11:07:18 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 (size: 35.8 KiB, free: 25.0 GiB)
+23/05/04 11:07:18 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1474
+23/05/04 11:07:18 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+23/05/04 11:07:18 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/05/04 11:07:18 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, executor driver, partition 0, PROCESS_LOCAL, 4678 bytes) taskResourceAssignments Map()
+23/05/04 11:07:18 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/05/04 11:07:19 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2291 bytes result sent to driver
+23/05/04 11:07:19 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 614 ms on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal (executor driver) (1/1)
+23/05/04 11:07:19 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/05/04 11:07:19 INFO DAGScheduler: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0) finished in 0.844 s
+23/05/04 11:07:19 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/05/04 11:07:19 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/05/04 11:07:19 INFO DAGScheduler: Job 0 finished: parquet at NativeMethodAccessorImpl.java:0, took 0.906094 s
+23/05/04 11:07:21 INFO BlockManagerInfo: Removed broadcast_0_piece0 on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 in memory (size: 35.8 KiB, free: 25.0 GiB)
+23/05/04 11:07:21 INFO FileSourceStrategy: Pushed Filters: 
+23/05/04 11:07:21 INFO FileSourceStrategy: Post-Scan Filters: 
+23/05/04 11:07:21 INFO FileSourceStrategy: Output Data Schema: struct<Date: date, Volume: int, vol_moving_avg: double, adj_close_rolling_med: double ... 2 more fields>
+23/05/04 11:07:21 INFO CodeGenerator: Code generated in 177.460251 ms
+23/05/04 11:07:21 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 274.1 KiB, free 25.0 GiB)
+23/05/04 11:07:21 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 33.8 KiB, free 25.0 GiB)
+23/05/04 11:07:21 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 (size: 33.8 KiB, free: 25.0 GiB)
+23/05/04 11:07:21 INFO SparkContext: Created broadcast 1 from toPandas at /home/ebony_maw_0/code/Model_Training.py:43
+23/05/04 11:07:21 INFO FileSourceScanExec: Planning scan with bin packing, max size: 86088924 bytes, open cost is considered as scanning 4194304 bytes.
+23/05/04 11:07:22 INFO SparkContext: Starting job: toPandas at /home/ebony_maw_0/code/Model_Training.py:43
+23/05/04 11:07:22 INFO DAGScheduler: Got job 1 (toPandas at /home/ebony_maw_0/code/Model_Training.py:43) with 8 output partitions
+23/05/04 11:07:22 INFO DAGScheduler: Final stage: ResultStage 1 (toPandas at /home/ebony_maw_0/code/Model_Training.py:43)
+23/05/04 11:07:22 INFO DAGScheduler: Parents of final stage: List()
+23/05/04 11:07:22 INFO DAGScheduler: Missing parents: List()
+23/05/04 11:07:22 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at toPandas at /home/ebony_maw_0/code/Model_Training.py:43), which has no missing parents
+23/05/04 11:07:22 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 14.4 KiB, free 25.0 GiB)
+23/05/04 11:07:22 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 6.1 KiB, free 25.0 GiB)
+23/05/04 11:07:22 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 (size: 6.1 KiB, free: 25.0 GiB)
+23/05/04 11:07:22 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1474
+23/05/04 11:07:22 INFO DAGScheduler: Submitting 8 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at toPandas at /home/ebony_maw_0/code/Model_Training.py:43) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+23/05/04 11:07:22 INFO TaskSchedulerImpl: Adding task set 1.0 with 8 tasks resource profile 0
+23/05/04 11:07:22 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, executor driver, partition 0, PROCESS_LOCAL, 4957 bytes) taskResourceAssignments Map()
+23/05/04 11:07:22 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2) (sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, executor driver, partition 1, PROCESS_LOCAL, 4957 bytes) taskResourceAssignments Map()
+23/05/04 11:07:22 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3) (sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, executor driver, partition 2, PROCESS_LOCAL, 4957 bytes) taskResourceAssignments Map()
+23/05/04 11:07:22 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4) (sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, executor driver, partition 3, PROCESS_LOCAL, 4957 bytes) taskResourceAssignments Map()
+23/05/04 11:07:22 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5) (sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, executor driver, partition 4, PROCESS_LOCAL, 4957 bytes) taskResourceAssignments Map()
+23/05/04 11:07:22 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6) (sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, executor driver, partition 5, PROCESS_LOCAL, 4957 bytes) taskResourceAssignments Map()
+23/05/04 11:07:22 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7) (sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, executor driver, partition 6, PROCESS_LOCAL, 4957 bytes) taskResourceAssignments Map()
+23/05/04 11:07:22 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8) (sample-challenge.asia-south1-b.c.rt-de-sample-task.internal, executor driver, partition 7, PROCESS_LOCAL, 4957 bytes) taskResourceAssignments Map()
+23/05/04 11:07:22 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/05/04 11:07:22 INFO Executor: Running task 1.0 in stage 1.0 (TID 2)
+23/05/04 11:07:22 INFO Executor: Running task 2.0 in stage 1.0 (TID 3)
+23/05/04 11:07:22 INFO Executor: Running task 6.0 in stage 1.0 (TID 7)
+23/05/04 11:07:22 INFO Executor: Running task 5.0 in stage 1.0 (TID 6)
+23/05/04 11:07:22 INFO Executor: Running task 4.0 in stage 1.0 (TID 5)
+23/05/04 11:07:22 INFO Executor: Running task 3.0 in stage 1.0 (TID 4)
+23/05/04 11:07:22 INFO Executor: Running task 7.0 in stage 1.0 (TID 8)
+23/05/04 11:07:22 INFO FileScanRDD: Reading File path: file:///home/ebony_maw_0/data/feature_engineering_output.parquet/part-00000-4eb50f3f-fcfc-4821-afd9-fceb475146df-c000.snappy.parquet, range: 0-86088924, partition values: [empty row]
+23/05/04 11:07:22 INFO FileScanRDD: Reading File path: file:///home/ebony_maw_0/data/feature_engineering_output.parquet/part-00000-4eb50f3f-fcfc-4821-afd9-fceb475146df-c000.snappy.parquet, range: 172177848-258266772, partition values: [empty row]
+23/05/04 11:07:22 INFO FileScanRDD: Reading File path: file:///home/ebony_maw_0/data/feature_engineering_output.parquet/part-00000-4eb50f3f-fcfc-4821-afd9-fceb475146df-c000.snappy.parquet, range: 516533544-602622468, partition values: [empty row]
+23/05/04 11:07:22 INFO FileScanRDD: Reading File path: file:///home/ebony_maw_0/data/feature_engineering_output.parquet/part-00000-4eb50f3f-fcfc-4821-afd9-fceb475146df-c000.snappy.parquet, range: 344355696-430444620, partition values: [empty row]
+23/05/04 11:07:22 INFO FileScanRDD: Reading File path: file:///home/ebony_maw_0/data/feature_engineering_output.parquet/part-00000-4eb50f3f-fcfc-4821-afd9-fceb475146df-c000.snappy.parquet, range: 258266772-344355696, partition values: [empty row]
+23/05/04 11:07:22 INFO FileScanRDD: Reading File path: file:///home/ebony_maw_0/data/feature_engineering_output.parquet/part-00000-4eb50f3f-fcfc-4821-afd9-fceb475146df-c000.snappy.parquet, range: 602622468-684517094, partition values: [empty row]
+23/05/04 11:07:22 INFO FileScanRDD: Reading File path: file:///home/ebony_maw_0/data/feature_engineering_output.parquet/part-00000-4eb50f3f-fcfc-4821-afd9-fceb475146df-c000.snappy.parquet, range: 86088924-172177848, partition values: [empty row]
+23/05/04 11:07:22 INFO FileScanRDD: Reading File path: file:///home/ebony_maw_0/data/feature_engineering_output.parquet/part-00000-4eb50f3f-fcfc-4821-afd9-fceb475146df-c000.snappy.parquet, range: 430444620-516533544, partition values: [empty row]
+23/05/04 11:07:22 INFO Executor: Finished task 6.0 in stage 1.0 (TID 7). 1637 bytes result sent to driver
+23/05/04 11:07:22 INFO Executor: Finished task 3.0 in stage 1.0 (TID 4). 1637 bytes result sent to driver
+23/05/04 11:07:22 INFO Executor: Finished task 1.0 in stage 1.0 (TID 2). 1637 bytes result sent to driver
+23/05/04 11:07:22 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 317 ms on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal (executor driver) (1/8)
+23/05/04 11:07:22 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 326 ms on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal (executor driver) (2/8)
+23/05/04 11:07:22 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 328 ms on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal (executor driver) (3/8)
+23/05/04 11:07:22 INFO CodecPool: Got brand-new decompressor [.snappy]
+23/05/04 11:07:22 INFO CodecPool: Got brand-new decompressor [.snappy]
+23/05/04 11:07:22 INFO CodecPool: Got brand-new decompressor [.snappy]
+23/05/04 11:07:22 INFO CodecPool: Got brand-new decompressor [.snappy]
+23/05/04 11:07:22 INFO CodecPool: Got brand-new decompressor [.snappy]
+23/05/04 11:07:26 INFO MemoryStore: Block taskresult_8 stored as bytes in memory (estimated size 80.6 MiB, free 24.9 GiB)
+23/05/04 11:07:26 INFO BlockManagerInfo: Added taskresult_8 in memory on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 (size: 80.6 MiB, free: 24.9 GiB)
+23/05/04 11:07:26 INFO Executor: Finished task 7.0 in stage 1.0 (TID 8). 84492524 bytes result sent via BlockManager)
+23/05/04 11:07:26 INFO TransportClientFactory: Successfully created connection to sample-challenge.asia-south1-b.c.rt-de-sample-task.internal/10.160.0.3:40195 after 40 ms (0 ms spent in bootstraps)
+23/05/04 11:07:27 INFO MemoryStore: Block taskresult_1 stored as bytes in memory (estimated size 92.5 MiB, free 24.9 GiB)
+23/05/04 11:07:27 INFO BlockManagerInfo: Added taskresult_1 in memory on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 (size: 92.5 MiB, free: 24.9 GiB)
+23/05/04 11:07:27 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 96983593 bytes result sent via BlockManager)
+23/05/04 11:07:27 INFO MemoryStore: Block taskresult_6 stored as bytes in memory (estimated size 91.5 MiB, free 24.8 GiB)
+23/05/04 11:07:27 INFO BlockManagerInfo: Added taskresult_6 in memory on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 (size: 91.5 MiB, free: 24.8 GiB)
+23/05/04 11:07:27 INFO Executor: Finished task 5.0 in stage 1.0 (TID 6). 95955366 bytes result sent via BlockManager)
+23/05/04 11:07:27 INFO MemoryStore: Block taskresult_5 stored as bytes in memory (estimated size 92.7 MiB, free 24.7 GiB)
+23/05/04 11:07:27 INFO BlockManagerInfo: Added taskresult_5 in memory on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 (size: 92.7 MiB, free: 24.7 GiB)
+23/05/04 11:07:27 INFO Executor: Finished task 4.0 in stage 1.0 (TID 5). 97205653 bytes result sent via BlockManager)
+23/05/04 11:07:27 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 5811 ms on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal (executor driver) (4/8)
+23/05/04 11:07:28 INFO BlockManagerInfo: Removed taskresult_8 on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 in memory (size: 80.6 MiB, free: 24.8 GiB)
+23/05/04 11:07:28 INFO MemoryStore: Block taskresult_3 stored as bytes in memory (estimated size 90.2 MiB, free 24.7 GiB)
+23/05/04 11:07:28 INFO BlockManagerInfo: Added taskresult_3 in memory on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 (size: 90.2 MiB, free: 24.7 GiB)
+23/05/04 11:07:28 INFO Executor: Finished task 2.0 in stage 1.0 (TID 3). 94611681 bytes result sent via BlockManager)
+23/05/04 11:07:28 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 6284 ms on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal (executor driver) (5/8)
+23/05/04 11:07:28 INFO BlockManagerInfo: Removed taskresult_1 on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 in memory (size: 92.5 MiB, free: 24.8 GiB)
+23/05/04 11:07:28 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 6480 ms on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal (executor driver) (6/8)
+23/05/04 11:07:28 INFO BlockManagerInfo: Removed taskresult_6 on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 in memory (size: 91.5 MiB, free: 24.8 GiB)
+23/05/04 11:07:28 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 6714 ms on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal (executor driver) (7/8)
+23/05/04 11:07:28 INFO BlockManagerInfo: Removed taskresult_5 on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 in memory (size: 92.7 MiB, free: 24.9 GiB)
+23/05/04 11:07:28 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 6907 ms on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal (executor driver) (8/8)
+23/05/04 11:07:28 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/05/04 11:07:28 INFO DAGScheduler: ResultStage 1 (toPandas at /home/ebony_maw_0/code/Model_Training.py:43) finished in 6.926 s
+23/05/04 11:07:28 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/05/04 11:07:28 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/05/04 11:07:28 INFO DAGScheduler: Job 1 finished: toPandas at /home/ebony_maw_0/code/Model_Training.py:43, took 6.937507 s
+23/05/04 11:07:28 INFO BlockManagerInfo: Removed taskresult_3 on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 in memory (size: 90.2 MiB, free: 25.0 GiB)
+23/05/04 11:37:17 INFO BlockManagerInfo: Removed broadcast_2_piece0 on sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:40195 in memory (size: 6.1 KiB, free: 25.0 GiB)
+23/05/04 13:29:50 INFO SparkContext: Invoking stop() from shutdown hook
+23/05/04 13:29:50 INFO SparkUI: Stopped Spark web UI at http://sample-challenge.asia-south1-b.c.rt-de-sample-task.internal:4040
+23/05/04 13:29:50 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/05/04 13:29:50 INFO MemoryStore: MemoryStore cleared
+23/05/04 13:29:50 INFO BlockManager: BlockManager stopped
+23/05/04 13:29:50 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/05/04 13:29:50 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/05/04 13:29:50 INFO SparkContext: Successfully stopped SparkContext
+23/05/04 13:29:50 INFO ShutdownHookManager: Shutdown hook called
+23/05/04 13:29:50 INFO ShutdownHookManager: Deleting directory /tmp/spark-84aba99b-72bd-4b2e-9667-934a65ac975c
+23/05/04 13:29:50 INFO ShutdownHookManager: Deleting directory /tmp/spark-0aca8223-6ed9-4866-a5bf-8b5109bebadb
+23/05/04 13:29:50 INFO ShutdownHookManager: Deleting directory /tmp/spark-84aba99b-72bd-4b2e-9667-934a65ac975c/pyspark-a6333111-cfbd-4a4a-99e4-8563130701f5

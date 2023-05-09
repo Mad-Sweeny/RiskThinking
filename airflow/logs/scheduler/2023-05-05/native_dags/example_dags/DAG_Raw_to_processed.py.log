@@ -1,0 +1,51 @@
+[2023-05-05T06:07:09.557+0000] {processor.py:156} INFO - Started process (PID=2782) to work on /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+[2023-05-05T06:07:09.558+0000] {processor.py:799} INFO - Processing file /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py for tasks to queue
+[2023-05-05T06:07:09.559+0000] {logging_mixin.py:149} INFO - [2023-05-05T06:07:09.558+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+[2023-05-05T06:07:09.562+0000] {logging_mixin.py:149} INFO - [2023-05-05T06:07:09.561+0000] {dagbag.py:350} ERROR - Failed to import: /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+Traceback (most recent call last):
+  File "/home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 923, in get_code
+  File "<frozen importlib._bootstrap_external>", line 853, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py", line 9
+    schedule_interval='0 0 * * *'
+    ^
+SyntaxError: invalid syntax
+[2023-05-05T06:07:09.562+0000] {processor.py:811} WARNING - No viable dags retrieved from /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+[2023-05-05T06:07:09.587+0000] {processor.py:178} INFO - Processing /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py took 0.035 seconds
+[2023-05-05T06:07:43.971+0000] {processor.py:156} INFO - Started process (PID=2818) to work on /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+[2023-05-05T06:07:43.972+0000] {processor.py:799} INFO - Processing file /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py for tasks to queue
+[2023-05-05T06:07:43.973+0000] {logging_mixin.py:149} INFO - [2023-05-05T06:07:43.973+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+[2023-05-05T06:07:43.976+0000] {logging_mixin.py:149} INFO - [2023-05-05T06:07:43.975+0000] {dagbag.py:350} ERROR - Failed to import: /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+Traceback (most recent call last):
+  File "/home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 923, in get_code
+  File "<frozen importlib._bootstrap_external>", line 853, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py", line 9
+    schedule_interval='0 0 * * *'
+    ^
+SyntaxError: invalid syntax
+[2023-05-05T06:07:43.977+0000] {processor.py:811} WARNING - No viable dags retrieved from /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+[2023-05-05T06:07:44.002+0000] {processor.py:178} INFO - Processing /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py took 0.035 seconds
+[2023-05-05T06:08:20.333+0000] {processor.py:156} INFO - Started process (PID=2871) to work on /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+[2023-05-05T06:08:20.335+0000] {processor.py:799} INFO - Processing file /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py for tasks to queue
+[2023-05-05T06:08:20.335+0000] {logging_mixin.py:149} INFO - [2023-05-05T06:08:20.335+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+[2023-05-05T06:08:20.339+0000] {logging_mixin.py:149} INFO - [2023-05-05T06:08:20.338+0000] {dagbag.py:350} ERROR - Failed to import: /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+Traceback (most recent call last):
+  File "/home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 923, in get_code
+  File "<frozen importlib._bootstrap_external>", line 853, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py", line 9
+    schedule_interval='0 0 * * *'
+    ^
+SyntaxError: invalid syntax
+[2023-05-05T06:08:20.339+0000] {processor.py:811} WARNING - No viable dags retrieved from /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py
+[2023-05-05T06:08:20.363+0000] {processor.py:178} INFO - Processing /home/ebony_maw_0/.local/lib/python3.9/site-packages/airflow/example_dags/DAG_Raw_to_processed.py took 0.034 seconds

@@ -1,0 +1,17 @@
+[2023-05-09T06:31:42.928+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Raw_To_Processed_Job.Model_Training scheduled__2023-05-07T00:00:00+00:00 [queued]>
+[2023-05-09T06:31:42.934+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Raw_To_Processed_Job.Model_Training scheduled__2023-05-07T00:00:00+00:00 [queued]>
+[2023-05-09T06:31:42.935+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-05-09T06:31:42.949+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): Model_Training> on 2023-05-07 00:00:00+00:00
+[2023-05-09T06:31:42.955+0000] {standard_task_runner.py:57} INFO - Started process 2313 to run task
+[2023-05-09T06:31:42.960+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Raw_To_Processed_Job', 'Model_Training', 'scheduled__2023-05-07T00:00:00+00:00', '--job-id', '187', '--raw', '--subdir', 'DAGS_FOLDER/DAG_Raw_to_processed.py', '--cfg-path', '/tmp/tmpp05n04hq']
+[2023-05-09T06:31:42.960+0000] {standard_task_runner.py:85} INFO - Job 187: Subtask Model_Training
+[2023-05-09T06:31:43.006+0000] {task_command.py:410} INFO - Running <TaskInstance: Raw_To_Processed_Job.Model_Training scheduled__2023-05-07T00:00:00+00:00 [running]> on host sample-challenge.asia-south1-b.c.rt-de-sample-task.internal
+[2023-05-09T06:31:43.072+0000] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Raw_To_Processed_Job' AIRFLOW_CTX_TASK_ID='Model_Training' AIRFLOW_CTX_EXECUTION_DATE='2023-05-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-07T00:00:00+00:00'
+[2023-05-09T06:31:43.074+0000] {logging_mixin.py:149} INFO - reading csv data
+[2023-05-09T06:31:59.733+0000] {logging_mixin.py:149} INFO - Dropping null values
+[2023-05-09T06:32:05.762+0000] {logging_mixin.py:149} INFO - Training rf regressor model
+[2023-05-09T07:29:46.350+0000] {logging_mixin.py:149} INFO - Mean Absolute Error is 0.07068955749367739 and Mean squared Error is 0.8220512786133817
+[2023-05-09T07:29:59.184+0000] {python.py:183} INFO - Done. Returned value was: Model Trained Successfully and saved to disk.
+[2023-05-09T07:29:59.827+0000] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=Raw_To_Processed_Job, task_id=Model_Training, execution_date=20230507T000000, start_date=20230509T063142, end_date=20230509T072959
+[2023-05-09T07:30:01.158+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-09T07:30:01.169+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
