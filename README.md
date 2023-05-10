@@ -2,6 +2,11 @@
 
 Link to the problem statement: https://github.com/RiskThinking/work-samples/blob/main/Data-Engineer.md
 
+Assumptions:
+  1. All the neccessary softwares (python, spark and airflow) are already installed
+  2. Data from kaggle is already downloaded and saved on machine
+  
+
 Problem 1: File code/Raw_To_processed.py contains the pyspark code for this particular problem statement. It reads the data from a local directory (assumption: kaggle dataset is already downloaded on the machine) and stores it in parquet format in a seperate directory
 
 Problem 2: File code/Feature_Engineering.py contains the pyspark code for this problem statement. This code reads the parquet file generateda as part of output from Problem 1 and derives 2 new columns using custom functions. Finally the new data is stores in parquet as well as csv format in a seperate directries.
